@@ -151,7 +151,7 @@ body:before {
 }
 @media screen and (max-width: 500px) {
   .contain {
-    margin-top: -100px !important;
+    margin-top: -70px !important;
   }
   body:before {
     content: " ";
