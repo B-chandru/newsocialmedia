@@ -129,10 +129,12 @@ body:before {
     text-align: center;
   }
   .contain .left .name {
-    height: 190px;
+    height: 190px !important;
+    width: 100%;
   }
   .contain .left h2 {
     font-size: 18px !important;
+    margin-top: -60px !important;
   }
   .contain .left h1 {
     font-size: 28px !important;
@@ -142,5 +144,16 @@ body:before {
   }
   .contain .left .date-box .datecontent3 {
     width: 100px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contain {
+    margin-top: 85px !important;
+  }
+  body:before {
+    content: " ";
+  }
+  #mob {
+    width: 350px !important;
   }
 }/*# sourceMappingURL=style.css.map */
