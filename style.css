@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  background: #0A0414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body:before {
+  content: url(./img/logo2.png);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.container .contain {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.container .contain .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .contain .left .name {
+  height: 250px;
+}
+.container .contain .left h2 {
+  margin-top: -75px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #C5C3C3;
+}
+.container .contain .left h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  background: linear-gradient(91.02deg, #AD7EF9 26.73%, #F9ABC7 85.52%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.container .contain .left .date-box {
+  display: flex;
+  gap: 30px;
+  max-width: 500px;
+  margin-top: 24px;
+}
+.container .contain .left .date-box .datecontent3 {
+  width: 147px;
+  height: 70px;
+  background: #10071F;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .contain .left .date-box .datecontent3 h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #F9F8F9;
+}
+.container .contain .left .date-box .datecontent {
+  width: 100px;
+  height: 70px;
+  background: #10071F;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .contain .left .date-box .datecontent h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #F9F8F9;
+}
+.container .contain .right .desktop-bg {
+  width: 700px;
+}
+
+@media screen and (max-width: 1210px) {
+  .container {
+    display: grid;
+    place-content: center;
+  }
+  .contain {
+    margin-top: 500px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contain .right .desktop-bg {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 731px) {
+  .container {
+    padding: 10px;
+  }
+  .contain {
+    margin-top: 300px;
+  }
+  .contain .right .desktop-bg {
+    width: 400px !important;
+    text-align: center;
+  }
+  .contain .left .name {
+    height: 190px;
+  }
+  .contain .left h2 {
+    font-size: 18px !important;
+  }
+  .contain .left h1 {
+    font-size: 28px !important;
+  }
+  .contain .left .date-box .datecontent {
+    width: 70px !important;
+  }
+  .contain .left .date-box .datecontent3 {
+    width: 100px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
